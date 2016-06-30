@@ -9,14 +9,13 @@ export default class ArtistList extends React.Component {
 	}
 
 	render() {
-		var artistNodes = this.props.data.map(function(artist) {
+		var artistNodes = this.props.data.map(function(artist, i) {
 			return (
-					<p>{artist[0]+' : '+artist[1]}</p>
-
+					<tr key={i}><th><p>{artist[0]}</p></th><th><p>{artist[1]}</p></th></tr>
 				)
 		});
 		return (
-				<div> {artistNodes} </div>
+				<table><tbody>{artistNodes}</tbody></table>
 			)
 	}
 }

@@ -1,0 +1,11 @@
+body {
+	font-family: 'Robato', sans-serif;
+	text-align: center;
+}
+button {
+	margin-top: 10px;
+}
+table {
+	margin-right: auto;
+	margin-left: auto;
+}
